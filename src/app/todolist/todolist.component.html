@@ -1,0 +1,14 @@
+<div class="l-item-list-wrap">
+		<div class="c-item-header">
+			<span class="c-item-checkbox-wrap"></span><span class="c-btn-add" (click)="addItem()">+</span>
+		</div>
+		<ul class="c-item-list">
+			<todo-item *ngFor="let item of todoListService.items;let i = index;"
+				[item]="item"
+				[tracked]="i"
+			></todo-item>
+		</ul> 
+		<div class="c-fake-list c-fake-list-1"></div>
+		<div class="c-fake-list c-fake-list-2"></div>
+		<div class="c-fake-list c-fake-list-3"></div>
+</div>

@@ -1,0 +1,11 @@
+<li class="c-item">
+	<label class="c-item-label">
+		<span class="c-item-checkbox-wrap">
+			<input type="checkbox" id="" [checked]="item.completed" [(ngModel)]="isDone">
+			<span class="c-control-indicator"></span>
+		</span>
+		<span class="c-item-title" [ngClass]="{'is-selected': isDone}">{{item.title}}</span>
+	</label>
+	<span class="c-item-delete" (click)="deleteItem(tracked)">delete</span>
+</li>
+
